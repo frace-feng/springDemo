@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="aop-demo" />
         <module name="mySpringBoot" />
+        <module name="myHibernate" />
         <module name="mySpringMVC" />
       </profile>
     </annotationProcessing>

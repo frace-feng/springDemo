@@ -12,6 +12,7 @@
         <module>aop-demo</module>
         <module>mySpringMVC</module>
         <module>mySpringBoot</module>
+        <module>myHibernate</module>
     </modules>
 
 
