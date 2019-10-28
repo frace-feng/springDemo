@@ -19,7 +19,10 @@
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
         <!-- Enable Hibernate's automatic session context management -->
+        <!--        如果使用的是本地事务（jdbc事务）-->
         <property name="current_session_context_class">thread</property>
+        <!--        如果使用的是全局事务（jta事务）
+        <property name="hibernate.current_session_context_class">jta</property>-->
 
         <!-- Disable the second-level cache -->
         <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
@@ -27,10 +30,10 @@
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
 
-        <mapping class="com.frace.entity.Department" />
-        <mapping class="com.frace.entity.Employee" />
-        <mapping class="com.frace.entity.SalaryGrade" />
-        <mapping class="com.frace.entity.Timekeeper" />
+        <mapping class="com.frace.entity.Department"/>
+        <mapping class="com.frace.entity.Employee"/>
+        <mapping class="com.frace.entity.SalaryGrade"/>
+        <mapping class="com.frace.entity.Timekeeper"/>
 
     </session-factory>
 
